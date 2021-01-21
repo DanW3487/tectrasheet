@@ -1,0 +1,291 @@
+<style>
+@import url(http://fonts.googleapis.com/css?family=roboto);
+@charset "UTF-8";
+
+<style>
+@import url(http://fonts.googleapis.com/css?family=roboto);
+@charset "UTF-8";
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.navigation {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: 1;
+}
+
+.navigation ul,
+.navigation ul li,
+.navigation ul ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul {
+  position: relative;
+  z-index: 500;
+  float: left;
+}
+
+.navigation ul li {
+  float: left;
+  min-height: 0.05em;
+  line-height: 1em;
+  vertical-align: middle;
+  position: relative;
+}
+
+.navigation ul li.hover,
+.navigation ul li:hover {
+  position: relative;
+  z-index: 510;
+  cursor: default;
+}
+
+.navigation ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  z-index: 520;
+  width: 100%;
+}
+
+.navigation ul ul ul {
+  top: 0;
+  right: 0;
+}
+
+.navigation ul li:hover > ul { visibility: visible; }
+
+.navigation ul ul {
+  top: 0;
+  left: 99%;
+}
+
+.navigation ul li { float: none; }
+
+
+.navigation {
+  width: 13em;
+  background: #333333;
+  font-family: 'roboto', Tahoma, Arial, sans-serif;
+  font-size: 14px;
+  zoom: 1;
+}
+
+.navigation:before {
+  content: '';
+  display: block;
+}
+
+.navigation:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.5em 1em;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation > ul { width: 13em; }
+
+.navigation ul ul { width: 13em; }
+
+.navigation > ul > li > a {
+  border-right: 0.3em solid #0096d6;
+  color: #ffffff;
+}
+
+.navigation > ul > li > a:hover { color: #ffffff; }
+
+.navigation > ul > li a:hover,
+.navigation > ul > li:hover a { background: #0096d6; }
+
+.navigation li { position: relative; }
+
+.navigation ul li.has-sub > a:after {
+  content: '»';
+  position: absolute;
+  right: 1em;
+}
+
+.navigation ul ul li.first {
+  -webkit-border-radius: 0 3px 0 0;
+  -moz-border-radius: 0 3px 0 0;
+  border-radius: 0 3px 0 0;
+}
+
+
+
+.navigation ul ul li:hover > a {
+  background: #333333;
+  color: #ffffff;
+}
+
+.navigation.align-right { float: right; }
+
+.no-sub {
+background: #0096d6;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  
+  }
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+  
+}
+
+.para {
+  font-size: 17px;
+  background-color: #333333;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.prev, .next {
+  padding: -1116px;
+  opacity: 0;
+  font-size: 0px;
+}
+
+
+.slideshow-container {
+  max-width: auto;
+  position: relative;
+  margin: auto;
+}
+
+
+.fade {
+  -webkit-animation-name: fade infinite;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+  
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+ 
+}
+
+* {
+  margin: 0;
+  padding: 0px;
+}
+.wrapper {
+  padding-top: 0px;
+  width: autopx;
+  margin: 0 auto;
+  overflow: hidden;
+  
+}
+.menu {
+  background: #0096d6;
+    background-image: linear-gradient( to bottom, #0096d6, #0b6d97);
+  font-size: 26px;
+  font-family: 'Montserrat' !important;
+  padding:70px;
+  margin-left: 0px;
+}
+
+.menu ul li {
+border-right: 0.5px solid #fff;
+}
+
+.menu ul li:last-of-type {
+border-right: none;
+}
+
+.menu ul ul li {
+border-right: none;
+}
+
+.menu ul {
+  margin-left: 0;
+  list-style: none;
+  text-align: center;
+}
+.menu ul li {
+  display: inline-block;
+}
+.menu ul li a {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  text-decoration: none;
+}
+.menu ul li a:hover {
+  background: #333333;
+  color: white;
+}
+
+#CentralArea {
+   padding-left: 200px;
+padding-right: 200px;
+ 
+}
+
+#glbfooter.gh-w {
+   padding-left: 200px;
+padding-right: 200px;
+}
+
+.stBadge {
+ padding-left: 200px;
+padding-right: 200px;
+}
+
+.logo {
+  float: left;
+  margin-top: -55px;
+  max-width: 196px;
+  margin-left: 100px;
+  margin-right: -60px;
+}
+
+.servhead {
+  margin-top: -250px;
+  margin-left: 180px;
+  font-size: 45px;
+  color: white;
+  position: fixed;
+  float: left;
+  width: 20%;
+  z-index: 9999999;
+  }
+  
+.servpara {
+  margin-top: -190px;
+  margin-left: 180px;
+  font-size: 15px;
+  color: white;
+  position: fixed;
+  float: left;
+  width: 50%;
+  z-index: 9999999;
+  }
+</style>
